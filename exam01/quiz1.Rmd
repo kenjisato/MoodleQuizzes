@@ -1,0 +1,29 @@
+```{r}
+excess <- sample(30:60, 1)
+shortage <- sample(20:40, 1)
+
+di <- excess - shortage
+
+```
+
+Question
+========
+
+雇用の過剰感についての企業へのアンケートを行った。「過剰」と答えた企業の比率が `r excess`%，「不足」と答えた企業の比率が `r shortage`% であった。このとき，雇用過剰感に関する DI（ディフュージョン・インデックス）はいくらになるか。
+
+
+Solution
+========
+
+過剰感と不足感の差を計算する。
+
+$$
+\text{DI} = `r excess` - `r shortage` = `r di`. 
+$$
+
+
+Meta-information
+================
+exname: diffusion-index-definition
+extype: num
+exsolution: `r di`
